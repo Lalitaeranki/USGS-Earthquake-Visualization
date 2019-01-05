@@ -9,4 +9,4 @@ Also Added are number of base maps to choose from as well as separate out our tw
 
 My Earthquake Visualization map can be viewd as you click on the link below to check out data visualization of the past 7 days for Earthquakes Hazard Map:
 https://lalitaeranki.github.io/USGS-Earthquake-Visualization/
-https://github.com/Lalitaeranki/USGS-Earthquake-Visualization/blob/master/earthquake_visualization.png
+USGS-Earthquake-Visualization/blob/master/earthquake_visualization.png
