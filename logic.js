@@ -1,4 +1,4 @@
-
+const API_KEY ="pk.eyJ1IjoibGFsaXRhZXJhbmtpIiwiYSI6ImNqb2w0eTRmdTBpbzUzd2xzMzFqZHJqbzYifQ.aERnJMqmkCvvk2f0_snzng";
  const queryurl="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
  const tectonicPlatesURL = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json";
 
