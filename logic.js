@@ -1,4 +1,4 @@
-var API_KEY = config.MY_KEY;
+var api_key = process.env.API_KEY;
  const queryurl="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
  const tectonicPlatesURL = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json";
 
@@ -64,20 +64,20 @@ function createFeature(earthquakeData){
           attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
           maxZoom: 18,
           id: "mapbox.satellite",
-          accessToken: API_KEY
+          accessToken: api_key
         });
       
         const darkMap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
           attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
           maxZoom: 18,
           id: "mapbox.dark",
-          accessToken: API_KEY
+          accessToken: api_key
         });
         const outdoorsMap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?" +
         "access_token={accessToken}", {
             maxZoom: 18,
             id: "mapbox.outdoors",
-            accessToken: API_KEY
+            accessToken: api_key
         });
       
         // Define a baseMaps object to hold our base layers
